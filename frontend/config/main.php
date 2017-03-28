@@ -52,7 +52,8 @@ return [
             'showScriptName' => false,
             'rules' => [
                 'dashboard'=>'site/index',
-		'signup'=>'site/signup',
+                'signup'=>'site/signup',
+		        'node/<id:[0-9]+>'=>'site/node',
             ],
         ],
     ],

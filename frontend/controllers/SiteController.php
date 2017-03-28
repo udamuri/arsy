@@ -216,9 +216,8 @@ class SiteController extends Controller
         ]);
     }
     
-
-    public function actionNode()
+    public function actionNode($id)
     {
-        
+        echo 'node-'.$id;
     }
 }
