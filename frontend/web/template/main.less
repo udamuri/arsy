@@ -1,0 +1,304 @@
+@import url(http://fonts.googleapis.com/css?family=Fjalla+One);
+//Fjalla-one.woff
+
+@font-face {
+    font-family: "Fjalla-one";
+    //src: url('Fjalla-one.woff') format('woff');
+    src: url('FjallaOne-Regular.ttf') , url('Fjalla-one.woff') format('woff');
+}
+
+@min1440:  ~"(min-width: 1440px)";
+@min1024:  ~"(min-width: 1024px)";
+@jumbo:  ~"(min-width: 768px)";
+@midi:  ~"(max-width: 767px)";
+@min768max992: ~"(min-width: 768px) and (max-width: 992px)";
+@min993max1200: ~"(min-width: 993px) and (max-width: 1200px)";
+
+
+@body : #f5f5f5 ;
+
+@brown_color : #4E2E1F;
+
+@white_color : #fff;
+@default_color : #E9E9E9;
+@danger_color : #d9534f;
+@primary_color : #428bca;
+@success_color : #2dcc70;
+// @success_color : #5cb85c;
+@info_color:    #5bc0de;
+@warning_color: #f0ad4e;
+
+@green_color: #428442;
+
+@default-darker:  lighten(@default_color, 13.5%);
+@danger-darker:  lighten(@danger_color, 13.5%);
+@primary-darker:  lighten(@primary_color, 13.5%);
+@success-darker:  lighten(@success_color, 13.5%);
+@info-darker:  lighten(@info_color, 13.5%);
+@warning-darker:  lighten(@warning_color, 13.5%);
+
+@slidebg1: #3498DB;
+@slidebg2: #E67E22;
+@slidebg3: #9B59B6;
+
+@black1color: #252525;
+@green1color: #2DCC70;
+@gray1color: #999;
+@footerbgcolor: #333;
+@bodycolor:#34495e;
+
+body {
+    padding-top: 72px;
+    font-size: 12px;
+    color: @bodycolor;
+    background-color: @body;
+}
+body h1,
+body h2,
+body h3,
+body h4,
+body h5,
+body h6,
+{
+    font-family: "Fjalla-one" , "Fjalla One","Helvetica Neue", Helvetica,Arial,sans-serif;
+    font-weight: normal
+}
+body h5,
+body h6 {
+    margin: 0
+}
+body h3,
+body h4 {
+    margin-top: 0
+}
+
+.border-radius(@radius : 0.3em)
+{
+    -webkit-border-radius: @radius;
+    -moz-border-radius: @radius;
+    border-radius: @radius;
+}
+
+.margin-bottom20{margin-bottom: 20px;}
+
+.transition-timer-carousel-progress-bar {
+    height: 3px;
+    background-color: @primary_color;
+    width: 0%;
+    margin: 0px 0px 0px 0px;
+    border: none;
+    z-index: 11;
+    position: relative;
+}
+
+section#mySlider 
+{
+    height: 400px;
+    width: 100%;
+    margin: 0;
+    .carousel-inner {
+        position: relative;
+        width: 100%;
+        height: 400px;
+        .item {
+            height: 100%;
+            img.mycarouselimage{
+                width: 100%;
+                height: 100%;
+            }
+
+            .carousel-caption
+            {
+                position: absolute;
+                bottom: 0;
+                .container > .caption-container {
+                        background: rgba(0, 0, 0, 0.2) none repeat scroll 0 0;
+                        border-top: 5px solid @primary_color;
+                        display: inline-block;
+                        float: left;
+                        padding: 15px;
+                        text-align: center;
+                        width: 50%;
+                         -webkit-transition: background 800ms; /* For Safari 3.1 to 6.0 */
+                        transition: background 800ms;
+                        color: @white_color;
+                        &:hover
+                        {
+                            background: rgba(0, 0, 0, 0.4) none repeat scroll 0 0;
+                        }
+
+                        .btn-nex-prev
+                        {
+                            background-color:@primary_color;
+                            color: @white_color;
+                            margin-right: 2px;
+                            padding: 5px;
+                            border: 1px solid @primary_color;
+                            &:hover{
+                                background-color:@primary-darker;
+                            }
+                        }
+                }
+            }
+          }
+    }
+
+    @media @midi
+    {
+        position: relative;
+        width: 100%;
+        height: 300px;
+
+        .carousel-inner {
+            position: relative;
+            width: 100%;
+            height: 250px;
+            .item {
+                .carousel-caption
+                {
+                    .container > .caption-container {
+                        width: 100%;
+                    }
+                }
+              }
+        }
+    }
+}
+
+.slidebg1
+{
+    background-color: @slidebg1;
+}
+
+.slidebg2
+{
+    background-color: @slidebg2
+}
+
+.slidebg3
+{
+    background-color: @slidebg3
+}
+
+.lead
+{
+    font-size: 13pt;
+    font-weight: 200;
+    line-height: 30px;
+    margin-bottom: 20px;
+}
+.no-magin{margin: 0;}
+
+
+section.main-title
+{
+    background-color: @green1color;
+    color:@white_color;
+    min-height: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+section.main-page-detail 
+{
+    background-color: @body;
+    color:@bodycolor;
+    min-height: 400px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+section.main-info
+{
+    background-color: @white_color;
+    min-height: 50px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+section.main-service
+{
+    background-color: @black1color;
+    color: @white_color;
+    min-height: 50px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    h3{color:@green1color;}
+    h4{color:@green1color;}
+    p { color: @gray1color;}
+    i.bgc {
+        color: @white_color;
+        background: @green1color;
+        .border-radius(50%);
+    }
+}
+
+section.main-work
+{
+    background-color: @green1color;
+    color: @white_color;
+    min-height: 50px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    h3{color:@white_color;}
+    h4{color:@white_color;}
+    p { color: @white_color;}
+}
+
+section.main-patner
+{
+    background-color: @white_color;
+    color: @black1color;
+    min-height: 50px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+section.main-company
+{
+    background-color: @black1color;
+    color: @white_color;
+    min-height: 50px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    h3, h4{color:@white_color;}
+    p { color: @gray1color;}
+
+    ul {
+        list-style: outside none none;
+        margin: 0;
+        li 
+        {
+            margin-left: -3.3em;
+            line-height: 2em;
+        }
+    }
+}
+
+section.main-map
+{
+    background-color: @black1color;
+    color: @white_color;
+    min-height: 50px;
+    padding: 0;
+    #map {
+        height: 350px;
+        @media @midi 
+        {
+            height: 200px; 
+        }
+    }
+}
+
+#footer
+{
+    background: @footerbgcolor;
+    color: @gray1color;
+    min-height: 50px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
