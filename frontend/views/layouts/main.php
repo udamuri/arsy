@@ -16,10 +16,37 @@ AppAsset::register($this);
 <!DOCTYPE html>
 <html lang="<?= Yii::$app->language ?>">
 <head>
+    <?php
+        $_blog_name = Yii::$app->mycomponent->frontendOptions('_blog_name');
+        $blogname = Html::encode($this->title);
+        if($_blog_name)
+        {
+            $blogname = Html::encode($_blog_name['option_value']);
+        }
+
+        $_blog_name = Yii::$app->mycomponent->frontendOptions('_meta_title');
+        $title = Html::encode($this->title);
+        if($_blog_name)
+        {
+            $title = Html::encode($_blog_name['option_value']);
+        }
+
+        $_blog_name = Yii::$app->mycomponent->frontendOptions('_meta_description');
+        $blogdesc = Html::encode($this->title);
+        if($_blog_name)
+        {
+            $blogdesc = Html::encode($_blog_name['option_value']);
+        }
+    ?>
+
     <meta charset="<?= Yii::$app->charset ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="<?=$blogdesc;?>">
     <?= Html::csrfMetaTags() ?>
-    <title><?= Html::encode($this->title) ?></title>
+
+   
+
+    <title><?=  $title ; ?></title>
     <link rel="icon" href="<?=Yii::$app->homeUrl;?>/css/img/logo_50.png?<?=time();?>">
     <?php $this->head() ?>
 </head>
@@ -29,7 +56,7 @@ AppAsset::register($this);
 
     <?php
     NavBar::begin([
-        'brandLabel' => Yii::$app->name,
+        'brandLabel' => $blogname,
         'brandUrl' => Yii::$app->homeUrl,
         'options' => [
             'class' => 'navbar-default navbar-fixed-top',

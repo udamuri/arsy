@@ -18,9 +18,16 @@ class TaskComponent extends Component
 		return "Hello..Welcome to MyComponent My Name Muri Budiman";
 	}
 
-	public function frontendOptions($value)
+	//Yii::$app->mycomponent->frontendOptions();
+	public function frontendOptions($value="")
 	{
+		$query = new Query;
+        $query->select('option_id, option_name, option_label, option_value, option_autoload')
+            ->from('tbl_options')
+            ->where(['option_name'=>$value]);
+        $rows = $query->one();
 
+        return $rows;
 	}
 
 	//Yii::$app->mycomponent->treeMenu();

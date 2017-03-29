@@ -127,13 +127,21 @@ $this->registerJs($jsx);
     <div class="container">
         <div class="row">
             <div class="col-md-9">
-                <h4>Lorem Ipsum Dolor Sit Amet</h4>
+                <h4>Welcome</h4>
+                <?php
+                  $_blog_desc = Yii::$app->mycomponent->frontendOptions('_blog_description');
+                  $blogdesc = '';
+                  if($_blog_desc)
+                  {
+                      $blogdesc = Html::encode($_blog_desc['option_value']);
+                  }
+                ?>
                 <p class="no-magin">
-                  is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.
+                    <?=$blogdesc;?>
                 </p>
             </div>
 
-            <div class="col-md-3">
+            <div class="col-md-3 text-right">
                 <button class="btn btn-success">Readmore</button>
             </div>
         </div>
