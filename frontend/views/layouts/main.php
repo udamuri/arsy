@@ -36,8 +36,10 @@ AppAsset::register($this);
         ],
     ]);
     $menuItems = [
-        ['label' => '<i class="fa fa-home"></i>&nbsp;Dashboard', 'url' => ['/dashboard']],
+        ['label' => '<i class="fa fa-home"></i>&nbsp;Home', 'url' => ['/home']],
     ];
+
+    $menuItems[] = Yii::$app->mycomponent->treeMenu();
    
     echo Nav::widget([
         'options' => ['class' => 'navbar-nav navbar-left'],

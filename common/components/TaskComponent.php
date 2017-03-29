@@ -18,6 +18,77 @@ class TaskComponent extends Component
 		return "Hello..Welcome to MyComponent My Name Muri Budiman";
 	}
 
+	public function frontendOptions($value)
+	{
+
+	}
+
+	//Yii::$app->mycomponent->treeMenu();
+	public function treeMenu()
+	{
+		$table = 'nestamenu';
+		$query = new Query;
+        $query->select('menu_id, menu_parent_id, menu_sort, menu_title, menu_link, menu_status')
+            ->from($table)
+            ->where(['menu_parent_id'=>0])
+            ->orderBy('menu_sort');
+        $rows = $query->all();
+   		$menu = '';
+   		if($rows)
+   		{
+            foreach ($rows as $value) {
+             	$menu .= '<li>';
+             	$submenu = '' ;
+             	$classa = '';
+             	$caret = '';
+             	if($submenu = $this->childMenu($value['menu_id'], $table))
+                {
+               		$classa = 'class="dropdown-toggle" data-toggle="dropdown"';
+               		$caret = ' <b class="caret"></b>';
+                }
+             	$menu .= '<a href="#" '.$classa.'>'.$value['menu_title'].$caret;
+             	$menu .= $submenu ;
+             	$menu .= '</a>';   
+             	$menu .= '</li>';   
+            }
+        }
+
+        return $menu;
+	}
+
+	private function childMenu($id = 0, $table)
+    {
+        $query = new Query;
+        $query->select('menu_id, menu_parent_id, menu_sort, menu_title, menu_link, menu_status')
+            ->from($table)
+            ->where(['menu_parent_id'=>$id])
+            ->orderBy('menu_sort');
+        $rows = $query->all();
+        $menu = '';
+        if($rows)
+        {
+        	$menu .= '<ul class="dropdown-menu">';
+           	foreach ($rows as $value) {
+        		$submenu = '' ;
+             	$classa = '';
+             	$caret = '';
+             	if($submenu = $this->childMenu($value['menu_id'], $table))
+                {
+               		$classa = 'class="dropdown-toggle" data-toggle="dropdown"';
+               		$caret = ' <b class="caret"></b>';
+                }
+                $menu .= '<li>';
+             	$menu .= '<a href="#" '.$classa.'>'.$value['menu_title'].$caret;
+             	$menu .= $submenu ;
+        		$menu .= '</a>';
+        		$menu .= '</li>';
+           	}
+
+           	$menu .= '</ul>' ;
+        }
+        return $menu;
+    }
+
 	//Yii::$app->mycomponent->getCopy(2016);
 	public function getCopy($start = 2010)
 	{
@@ -272,30 +343,6 @@ class TaskComponent extends Component
 		return $level;
 	}
 
-	//Yii::$app->mycomponent->getAgama($in);
-	public function getAgama($in)
-	{
-		$level = '';
-		switch ($in) {
-			case 1:
-				$level = 'Islam';
-				break;
-			case 2:
-				$level = 'Kristen';
-				break;
-			case 3:
-				$level = 'Protestan';
-				break;
-			case 4:
-				$level = 'Hindu';
-				break;
-			case 5:
-				$level = 'Budha';
-				break;
-		}
-		
-		return $level;
-	}
 
 	//Yii::$app->mycomponent->calculateDate($start, $end);
 	public function calculateDate($start, $end)
