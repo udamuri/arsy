@@ -2,7 +2,7 @@
 namespace common\components;
 //use app\components\Constants;
 /**
- * Constants  
+ * Constants
  */ 
 class Constants
 {

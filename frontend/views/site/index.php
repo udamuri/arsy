@@ -20,12 +20,15 @@ SCRIPT;
 $this->registerJs('IndexObj.baseUrl = "'. Yii::$app->homeUrl.'"');
 $this->registerJs('HomeObj.baseUrl = "'. Yii::$app->homeUrl.'"');
 $this->registerJs($jsx);
-
+$slide = Yii::$app->mycomponent->getSlide();
 ?>
 
 <section id="mySlider" class="carousel slide" data-ride="carousel" data-interval="10000">
     <!-- Wrapper for slides -->
     <div class="carousel-inner" role="listbox">
+      <?php if(count($slide) > 0){ ?>
+
+      <?php } else { ?>
       <div class="slidebg1 item active">
           <img class="mycarouselimage" src="<?=Yii::$app->homeUrl?>template/img/1.jpg" alt="First">
           <div class="carousel-caption">
@@ -119,6 +122,7 @@ $this->registerJs($jsx);
               </div>
           </div>
       </div>
+      <?php } ?>
     </div>
     <hr class="transition-timer-carousel-progress-bar" />
 </section>

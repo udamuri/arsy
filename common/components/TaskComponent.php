@@ -5,10 +5,10 @@ use Yii;
 use yii\base\Component;
 use yii\base\InvalidConfigException;
 //use yii\helpers\BaseFileHelper;
-use app\components\Constants;
 use yii\helpers\Url;
 use yii\helpers\FileHelper;
 use yii\db\Query;
+use common\components\Constants;
  
 class TaskComponent extends Component
 {
@@ -26,6 +26,18 @@ class TaskComponent extends Component
             ->from('tbl_options')
             ->where(['option_name'=>$value]);
         $rows = $query->one();
+
+        return $rows;
+	}
+
+	//Yii::$app->mycomponent->getSlide();
+	public function getSlide()
+	{
+		$query = new Query;
+        $query->select('post_id, post_category_id, post_title, post_excerpt, post_content')
+            ->from('tbl_post')
+            ->where(['post_status'=>1, 'post_type'=>Constants::SLIDE]);
+        $rows = $query->all();
 
         return $rows;
 	}
