@@ -21,13 +21,48 @@ $this->registerJs('IndexObj.baseUrl = "'. Yii::$app->homeUrl.'"');
 $this->registerJs('HomeObj.baseUrl = "'. Yii::$app->homeUrl.'"');
 $this->registerJs($jsx);
 $slide = Yii::$app->mycomponent->getSlide();
+$i = 0; 
 ?>
 
 <section id="mySlider" class="carousel slide" data-ride="carousel" data-interval="10000">
     <!-- Wrapper for slides -->
     <div class="carousel-inner" role="listbox">
-      <?php if(count($slide) > 0){ ?>
+      <?php if(count($slide) > 1){ ?>
+            <?php foreach($slide as $value) { 
+                $i++;
+                $active = ''; 
+                if($i == 1) { $active = 'active'; }    
+            ?>
+                <div class="slidebg1 item <?=$active;?>">
+                    <img class="mycarouselimage" src="<?=$value['post_content']?>" alt="First">
+                    <div class="carousel-caption">
+                        <div class="container">
+                            <div class="caption-container">
+                                <div class="row">
+                                    <div class="col-xs-6">
+                                        
+                                    </div>
+                                    <div class="col-xs-6">
+                                    <a class="pull-right btn-nex-prev" href="#mySlider" role="button" data-slide="next">
+                                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                        <span class="sr-only">Next</span>
+                                    </a>
 
+                                    <a class="pull-right btn-nex-prev" href="#mySlider" role="button" data-slide="prev">
+                                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                        <span class="sr-only">Previous</span>
+                                    </a>
+                                    
+                                    </div>
+                                </div>
+
+                                <h3>First</h3>
+                                <p>The atmosphere in Chania has a touch of Florence and Venice.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <?php } ?>
       <?php } else { ?>
       <div class="slidebg1 item active">
           <img class="mycarouselimage" src="<?=Yii::$app->homeUrl?>template/img/1.jpg" alt="First">
