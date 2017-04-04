@@ -56,8 +56,8 @@ $i = 0;
                                     </div>
                                 </div>
 
-                                <h3>First</h3>
-                                <p>The atmosphere in Chania has a touch of Florence and Venice.</p>
+                                <h3><?=$value['post_title']?></h3>
+                                <p><?=$value['post_excerpt']?></p>
                             </div>
                         </div>
                     </div>
