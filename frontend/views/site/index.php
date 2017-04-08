@@ -165,14 +165,14 @@ $i = 0;
 <section class="main-info">
     <div class="container">
         <div class="row">
-            <div class="col-md-9">
-                <h4>Welcome</h4>
+            <div class="col-md-12">
+                <h4>Selamat Datang</h4>
                 <?php
                   $_blog_desc = Yii::$app->mycomponent->frontendOptions('_blog_description');
                   $blogdesc = '';
                   if($_blog_desc)
                   {
-                      $blogdesc = Html::encode($_blog_desc['option_value']);
+                      $blogdesc = Html::decode($_blog_desc['option_value']);
                   }
                 ?>
                 <p class="no-magin">
@@ -180,9 +180,9 @@ $i = 0;
                 </p>
             </div>
 
-            <div class="col-md-3 text-right">
+            <!--<div class="col-md-3 text-right">
                 <button class="btn btn-success">Readmore</button>
-            </div>
+            </div>-->
         </div>
     </div>
 </section>
@@ -191,7 +191,7 @@ $i = 0;
     <div class="container">
         <div class="row margin-bottom20">
             <div class="col-md-12">
-                <h3 class="text-center">Instrument</h3>
+                <h3 class="text-center">Katalog</h3>
                 <p class="lead text-center">is simply dummy text of the printing and typesetting industry.</p>
             </div>
         </div>
