@@ -196,176 +196,176 @@ $i = 0;
         </div>
 
         <div id="mycarouselx" class="row margin-top20">
-                    <div class="col-md-12">
-                    <div class="carousel slide" data-ride="carousel" data-type="multi" data-interval="3000" id="myCarousel">
-                      <div class="carousel-inner">
-                        <div class="item active">
-                          <div class="col-md-3 col-sm-6 col-xs-12">
-                              <div class="panel panel-default">
-                                <div class="panel-heading">Panel heading without title</div>
-                                <div class="panel-body">
-                                    <div class="image-header">
-                                        <img src="img/buffalo.jpeg" class="img-responsive center-block">
-                                    </div>
-
-                                    <div class="caro-text">
-                                        is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
-                                    </div>
+            <div class="col-md-12">
+                <div class="carousel slide" data-ride="carousel" data-type="multi" data-interval="3000" id="myCarousel">
+                  <div class="carousel-inner">
+                    <div class="item active">
+                      <div class="col-md-3 col-sm-6 col-xs-12">
+                          <div class="panel panel-default">
+                            <div class="panel-heading">Panel heading without title</div>
+                            <div class="panel-body">
+                                <div class="image-header">
+                                    <img src="img/buffalo.jpeg" class="img-responsive center-block">
                                 </div>
-                                <div class="panel-footer">Panel footer</div>
-                              </div> 
-                          </div>
-                        </div>
-                        <div class="item">
-                          <div class="col-md-3 col-sm-6 col-xs-12">
-                              <div class="panel panel-default">
-                                <div class="panel-heading">Panel heading without title</div>
-                                <div class="panel-body">
-                                    <div class="image-header">
-                                        <img src="img/buffalo.jpeg" class="img-responsive center-block">
-                                    </div>
 
-                                    <div class="caro-text">
-                                        is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
-                                    </div>
+                                <div class="caro-text">
+                                    is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
                                 </div>
-                                <div class="panel-footer">Panel footer</div>
-                              </div> 
-                          </div>
-                        </div>
-
-                        <div class="item">
-                          <div class="col-md-3 col-sm-6 col-xs-12">
-                              <div class="panel panel-default">
-                                <div class="panel-heading">Panel heading without title</div>
-                                <div class="panel-body">
-                                    <div class="image-header">
-                                        <img src="img/buffalo.jpeg" class="img-responsive center-block">
-                                    </div>
-
-                                    <div class="caro-text">
-                                        is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
-                                    </div>
-                                </div>
-                                <div class="panel-footer">Panel footer</div>
-                              </div> 
-                          </div>
-                        </div>
-
-                        <div class="item">
-                          <div class="col-md-3 col-sm-6 col-xs-12">
-                              <div class="panel panel-default">
-                                <div class="panel-heading">Panel heading without title</div>
-                                <div class="panel-body">
-                                    <div class="image-header">
-                                        <img src="img/buffalo.jpeg" class="img-responsive center-block">
-                                    </div>
-
-                                    <div class="caro-text">
-                                        is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
-                                    </div>
-                                </div>
-                                <div class="panel-footer">Panel footer</div>
-                              </div> 
-                          </div>
-                        </div>
-
-                        <div class="item">
-                          <div class="col-md-3 col-sm-6 col-xs-12">
-                              <div class="panel panel-default">
-                                <div class="panel-heading">Panel heading without title</div>
-                                <div class="panel-body">
-                                    <div class="image-header">
-                                        <img src="img/buffalo.jpeg" class="img-responsive center-block">
-                                    </div>
-
-                                    <div class="caro-text">
-                                        is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
-                                    </div>
-                                </div>
-                                <div class="panel-footer">Panel footer</div>
-                              </div> 
-                          </div>
-                        </div>
-
-                        <div class="item">
-                          <div class="col-md-3 col-sm-6 col-xs-12">
-                              <div class="panel panel-default">
-                                <div class="panel-heading">Panel heading without title</div>
-                                <div class="panel-body">
-                                    <div class="image-header">
-                                        <img src="img/buffalo.jpeg" class="img-responsive center-block">
-                                    </div>
-
-                                    <div class="caro-text">
-                                        is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
-                                    </div>
-                                </div>
-                                <div class="panel-footer">Panel footer</div>
-                              </div> 
-                          </div>
-                        </div>
-
-                        <div class="item">
-                          <div class="col-md-3 col-sm-6 col-xs-12">
-                              <div class="panel panel-default">
-                                <div class="panel-heading">Panel heading without title</div>
-                                <div class="panel-body">
-                                    <div class="image-header">
-                                        <img src="img/buffalo.jpeg" class="img-responsive center-block">
-                                    </div>
-
-                                    <div class="caro-text">
-                                        is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
-                                    </div>
-                                </div>
-                                <div class="panel-footer">Panel footer</div>
-                              </div> 
-                          </div>
-                        </div>
-
-                        <div class="item">
-                          <div class="col-md-3 col-sm-6 col-xs-12">
-                              <div class="panel panel-default">
-                                <div class="panel-heading">Panel heading without title</div>
-                                <div class="panel-body">
-                                    <div class="image-header">
-                                        <img src="img/buffalo.jpeg" class="img-responsive center-block">
-                                    </div>
-                                    <div class="caro-text">
-                                        is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
-                                    </div>
-                                </div>
-                                <div class="panel-footer">Panel footer</div>
-                              </div> 
-                          </div>
-                        </div>
-
-                        <div class="item">
-                          <div class="col-md-3 col-sm-6 col-xs-12">
-                              <div class="panel panel-default">
-                                <div class="panel-heading">Panel heading without title</div>
-                                <div class="panel-body">
-                                    <div class="image-header">
-                                        <img src="img/buffalo.jpeg" class="img-responsive center-block">
-                                    </div>
-
-                                    <div class="caro-text">
-                                        is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
-                                    </div>
-                                </div>
-                                <div class="panel-footer">Panel footer</div>
-                              </div> 
-                          </div>
-                        </div>
-                        
+                            </div>
+                            <div class="panel-footer">Panel footer</div>
+                          </div> 
                       </div>
-                      <a class="left carousel-control" href="#myCarousel" data-slide="prev"><i class="glyphicon glyphicon-chevron-left"></i></a>
-                      <a class="right carousel-control" href="#myCarousel" data-slide="next"><i class="glyphicon glyphicon-chevron-right"></i></a>
                     </div>
-                    <!-- end -->
+                    <div class="item">
+                      <div class="col-md-3 col-sm-6 col-xs-12">
+                          <div class="panel panel-default">
+                            <div class="panel-heading">Panel heading without title</div>
+                            <div class="panel-body">
+                                <div class="image-header">
+                                    <img src="img/buffalo.jpeg" class="img-responsive center-block">
+                                </div>
+
+                                <div class="caro-text">
+                                    is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+                                </div>
+                            </div>
+                            <div class="panel-footer">Panel footer</div>
+                          </div> 
+                      </div>
+                    </div>
+
+                    <div class="item">
+                      <div class="col-md-3 col-sm-6 col-xs-12">
+                          <div class="panel panel-default">
+                            <div class="panel-heading">Panel heading without title</div>
+                            <div class="panel-body">
+                                <div class="image-header">
+                                    <img src="img/buffalo.jpeg" class="img-responsive center-block">
+                                </div>
+
+                                <div class="caro-text">
+                                    is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+                                </div>
+                            </div>
+                            <div class="panel-footer">Panel footer</div>
+                          </div> 
+                      </div>
+                    </div>
+
+                    <div class="item">
+                      <div class="col-md-3 col-sm-6 col-xs-12">
+                          <div class="panel panel-default">
+                            <div class="panel-heading">Panel heading without title</div>
+                            <div class="panel-body">
+                                <div class="image-header">
+                                    <img src="img/buffalo.jpeg" class="img-responsive center-block">
+                                </div>
+
+                                <div class="caro-text">
+                                    is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+                                </div>
+                            </div>
+                            <div class="panel-footer">Panel footer</div>
+                          </div> 
+                      </div>
+                    </div>
+
+                    <div class="item">
+                      <div class="col-md-3 col-sm-6 col-xs-12">
+                          <div class="panel panel-default">
+                            <div class="panel-heading">Panel heading without title</div>
+                            <div class="panel-body">
+                                <div class="image-header">
+                                    <img src="img/buffalo.jpeg" class="img-responsive center-block">
+                                </div>
+
+                                <div class="caro-text">
+                                    is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+                                </div>
+                            </div>
+                            <div class="panel-footer">Panel footer</div>
+                          </div> 
+                      </div>
+                    </div>
+
+                    <div class="item">
+                      <div class="col-md-3 col-sm-6 col-xs-12">
+                          <div class="panel panel-default">
+                            <div class="panel-heading">Panel heading without title</div>
+                            <div class="panel-body">
+                                <div class="image-header">
+                                    <img src="img/buffalo.jpeg" class="img-responsive center-block">
+                                </div>
+
+                                <div class="caro-text">
+                                    is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+                                </div>
+                            </div>
+                            <div class="panel-footer">Panel footer</div>
+                          </div> 
+                      </div>
+                    </div>
+
+                    <div class="item">
+                      <div class="col-md-3 col-sm-6 col-xs-12">
+                          <div class="panel panel-default">
+                            <div class="panel-heading">Panel heading without title</div>
+                            <div class="panel-body">
+                                <div class="image-header">
+                                    <img src="img/buffalo.jpeg" class="img-responsive center-block">
+                                </div>
+
+                                <div class="caro-text">
+                                    is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+                                </div>
+                            </div>
+                            <div class="panel-footer">Panel footer</div>
+                          </div> 
+                      </div>
+                    </div>
+
+                    <div class="item">
+                      <div class="col-md-3 col-sm-6 col-xs-12">
+                          <div class="panel panel-default">
+                            <div class="panel-heading">Panel heading without title</div>
+                            <div class="panel-body">
+                                <div class="image-header">
+                                    <img src="img/buffalo.jpeg" class="img-responsive center-block">
+                                </div>
+                                <div class="caro-text">
+                                    is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+                                </div>
+                            </div>
+                            <div class="panel-footer">Panel footer</div>
+                          </div> 
+                      </div>
+                    </div>
+
+                    <div class="item">
+                      <div class="col-md-3 col-sm-6 col-xs-12">
+                          <div class="panel panel-default">
+                            <div class="panel-heading">Panel heading without title</div>
+                            <div class="panel-body">
+                                <div class="image-header">
+                                    <img src="img/buffalo.jpeg" class="img-responsive center-block">
+                                </div>
+
+                                <div class="caro-text">
+                                    is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+                                </div>
+                            </div>
+                            <div class="panel-footer">Panel footer</div>
+                          </div> 
+                      </div>
+                    </div>
+                    
+                  </div>
+                  <a class="left carousel-control" href="#myCarousel" data-slide="prev"><i class="glyphicon glyphicon-chevron-left"></i></a>
+                  <a class="right carousel-control" href="#myCarousel" data-slide="next"><i class="glyphicon glyphicon-chevron-right"></i></a>
                 </div>
-              <div class="clearfix"></div>
+                <!-- end -->
+            </div>
+            <div class="clearfix"></div>
         </div>
 
         <div class="row">
