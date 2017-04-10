@@ -52,7 +52,15 @@ function post()
 			var url = $(this).data('imgurl');
 			if(PostObj.ckeditor !== false)
 			{
-				CKEDITOR.instances[PostObj.ckeditor].insertHtml('<img class="img-responsive" src="'+url+'" >');
+				
+				if($('#banner-post').is(':checked'))
+				{
+					$('#postform-meta_image').val(url);
+				}
+				else
+				{
+					CKEDITOR.instances[PostObj.ckeditor].insertHtml('<img class="img-responsive" src="'+url+'" >');
+				}
 			}
 
 			if(PostObj.slide !== false)
@@ -68,7 +76,14 @@ function post()
 			var url = $(this).data('imgurl');
 			if(PostObj.ckeditor !== false)
 			{
-				CKEDITOR.instances[PostObj.ckeditor].insertHtml('<img class="img-responsive" src="'+url+'" >');
+				if($('#banner-post').is(':checked'))
+				{
+					$('#postform-meta_image').val(url);
+				}
+				else 
+				{
+					CKEDITOR.instances[PostObj.ckeditor].insertHtml('<img class="img-responsive" src="'+url+'" >');
+				}
 			}
 
 			if(PostObj.slide !== false)
@@ -173,6 +188,7 @@ function post()
 										'<div>'+
 											'<button data-imgurl="'+models[i]['img_url']+'" class="btn btn-primary btn-sm  btn-add-img-ckeditor">Add Large</button> '+
 											'<button data-imgurl="'+models[i]['img_url_resize']+'" class="btn btn-primary btn-sm  btn-add-img-ckeditor-resize">Add Resize</button> '+
+											'<input id="banner-post" type="checkbox" name="vehicle" value="Bike"> Banner <br> '+
 										'</div>'+
 									'</div>' ;
 							//console.log(models[i]);
