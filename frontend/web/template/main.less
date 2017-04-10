@@ -317,3 +317,35 @@ section.main-map
 {
     color: @black1color;
 }
+
+#mycarouselx
+{
+    .img-product
+    {
+        position: relative;
+        width: 100%;
+        padding: 50%;
+        .img-container
+        {
+            position: absolute;
+            top:0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow-y:hidden;
+            background-color: @brown_color;
+
+            img {
+                max-width: 100%;
+                max-height: 100%;
+                position: absolute;
+                margin: auto;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+            }
+
+        }
+    }
+}
