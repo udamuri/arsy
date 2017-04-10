@@ -192,7 +192,6 @@ $i = 0;
         <div class="row margin-bottom20">
             <div class="col-md-12">
                 <h3 class="text-center">Katalog</h3>
-                <p class="lead text-center">is simply dummy text of the printing and typesetting industry.</p>
             </div>
         </div>
 
@@ -202,7 +201,7 @@ $i = 0;
                       <div class="carousel-inner">
                         <div class="item active">
                           <div class="col-md-3 col-sm-6 col-xs-12">
-                              <div class="panel panel-self">
+                              <div class="panel panel-default">
                                 <div class="panel-heading">Panel heading without title</div>
                                 <div class="panel-body">
                                     <div class="image-header">
@@ -219,7 +218,7 @@ $i = 0;
                         </div>
                         <div class="item">
                           <div class="col-md-3 col-sm-6 col-xs-12">
-                            <div class="panel panel-self">
+                              <div class="panel panel-default">
                                 <div class="panel-heading">Panel heading without title</div>
                                 <div class="panel-body">
                                     <div class="image-header">
@@ -234,9 +233,10 @@ $i = 0;
                               </div> 
                           </div>
                         </div>
+
                         <div class="item">
                           <div class="col-md-3 col-sm-6 col-xs-12">
-                            <div class="panel panel-self">
+                              <div class="panel panel-default">
                                 <div class="panel-heading">Panel heading without title</div>
                                 <div class="panel-body">
                                     <div class="image-header">
@@ -251,9 +251,10 @@ $i = 0;
                               </div> 
                           </div>
                         </div>
+
                         <div class="item">
                           <div class="col-md-3 col-sm-6 col-xs-12">
-                            <div class="panel panel-self">
+                              <div class="panel panel-default">
                                 <div class="panel-heading">Panel heading without title</div>
                                 <div class="panel-body">
                                     <div class="image-header">
@@ -268,9 +269,10 @@ $i = 0;
                               </div> 
                           </div>
                         </div>
+
                         <div class="item">
                           <div class="col-md-3 col-sm-6 col-xs-12">
-                            <div class="panel panel-self">
+                              <div class="panel panel-default">
                                 <div class="panel-heading">Panel heading without title</div>
                                 <div class="panel-body">
                                     <div class="image-header">
@@ -285,9 +287,10 @@ $i = 0;
                               </div> 
                           </div>
                         </div>
+
                         <div class="item">
                           <div class="col-md-3 col-sm-6 col-xs-12">
-                            <div class="panel panel-self">
+                              <div class="panel panel-default">
                                 <div class="panel-heading">Panel heading without title</div>
                                 <div class="panel-body">
                                     <div class="image-header">
@@ -302,9 +305,10 @@ $i = 0;
                               </div> 
                           </div>
                         </div>
+
                         <div class="item">
                           <div class="col-md-3 col-sm-6 col-xs-12">
-                            <div class="panel panel-self">
+                              <div class="panel panel-default">
                                 <div class="panel-heading">Panel heading without title</div>
                                 <div class="panel-body">
                                     <div class="image-header">
@@ -319,9 +323,27 @@ $i = 0;
                               </div> 
                           </div>
                         </div>
+
                         <div class="item">
                           <div class="col-md-3 col-sm-6 col-xs-12">
-                            <div class="panel panel-self">
+                              <div class="panel panel-default">
+                                <div class="panel-heading">Panel heading without title</div>
+                                <div class="panel-body">
+                                    <div class="image-header">
+                                        <img src="img/buffalo.jpeg" class="img-responsive center-block">
+                                    </div>
+                                    <div class="caro-text">
+                                        is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+                                    </div>
+                                </div>
+                                <div class="panel-footer">Panel footer</div>
+                              </div> 
+                          </div>
+                        </div>
+
+                        <div class="item">
+                          <div class="col-md-3 col-sm-6 col-xs-12">
+                              <div class="panel panel-default">
                                 <div class="panel-heading">Panel heading without title</div>
                                 <div class="panel-body">
                                     <div class="image-header">
@@ -336,14 +358,14 @@ $i = 0;
                               </div> 
                           </div>
                         </div>
+                        
                       </div>
                       <a class="left carousel-control" href="#myCarousel" data-slide="prev"><i class="glyphicon glyphicon-chevron-left"></i></a>
                       <a class="right carousel-control" href="#myCarousel" data-slide="next"><i class="glyphicon glyphicon-chevron-right"></i></a>
                     </div>
-                    </div>
                     <!-- end -->
                 </div>
-              </div>
+              <div class="clearfix"></div>
         </div>
 
         <div class="row">
