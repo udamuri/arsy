@@ -178,6 +178,11 @@ function post()
 					var models = arrData['models'];
 					if(typeof models == 'object')
 					{
+						html += '<div class="row">' +
+									'<div class="col-md-12">'+
+										'<input id="banner-post" type="checkbox" name="vehicle" value="Bike"> Banner <br> ' +
+									'</div>'+
+								'</div>';
 						for(var i=0;i<models.length;i++)
 						{
 							html += '<div class="col-lg-2 col-md-2 col-sm-6 col-xs-12 margin-bottom20">'+
@@ -188,7 +193,6 @@ function post()
 										'<div>'+
 											'<button data-imgurl="'+models[i]['img_url']+'" class="btn btn-primary btn-sm  btn-add-img-ckeditor">Add Large</button> '+
 											'<button data-imgurl="'+models[i]['img_url_resize']+'" class="btn btn-primary btn-sm  btn-add-img-ckeditor-resize">Add Resize</button> '+
-											'<input id="banner-post" type="checkbox" name="vehicle" value="Bike"> Banner <br> '+
 										'</div>'+
 									'</div>' ;
 							//console.log(models[i]);

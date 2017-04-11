@@ -34,7 +34,10 @@ class m161229_133813_tbl_options extends Migration
                 (10, '_email_setting', 'Email', 'udamuri@gmail.com', 'email', '1'),
                 (11, '_password_email', 'Password Email', '123456789', 'password', '1'),
                 (12, '_flick', 'Flickr feed', '130044503@N03', 'text', '2'),
-                (13, '_google_map', 'Google Map (lang, lat)', '-0.316953,100.3850244', 'text', '1');");
+                (13, '_home_catalog', 'ID Catalog', '', 'text', '1'),
+                (14, '_home_recent_works', 'ID Recent Works', '', 'text', '1'),
+                (15, '_home_partners', 'Partners', '', 'text', '1'),
+                (16, '_google_map', 'Google Map (lang, lat)', '-0.316953,100.3850244', 'text', '1');");
     }
 
     public function down()
