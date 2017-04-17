@@ -108,6 +108,28 @@ class TaskComponent extends Component
         return $menu;
     }
 
+    //Yii::$app->mycomponent->getHomeCategory($id, $data_max);
+    public function getHomeCategory($id = "", $data_max = 20)
+    {
+    	if($id !== '')
+    	{
+	    	$arrExplode = explode(',', $id);
+	    	$query = new Query;
+	        $query->select('post_id, post_title, post_content, post_excerpt')
+	            ->from('tbl_post')
+	            ->where(['post_category_id'=>$arrExplode])
+	            ->limit($data_max)
+	            ->orderBy('rand()');
+	        $rows = $query->all();
+	        
+	        return $rows;
+    	}
+    	else
+    	{
+    		return false;
+    	}
+    }
+
 	//Yii::$app->mycomponent->getCopy(2016);
 	public function getCopy($start = 2010)
 	{

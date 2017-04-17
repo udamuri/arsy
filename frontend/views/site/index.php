@@ -22,6 +22,12 @@ $this->registerJs('HomeObj.baseUrl = "'. Yii::$app->homeUrl.'"');
 $this->registerJs($jsx);
 $slide = Yii::$app->mycomponent->getSlide();
 $i = 0; 
+$_catalog = Yii::$app->mycomponent->frontendOptions('_home_catalog');
+$cat = false;
+if($_catalog !== false)
+{
+  $cat = Yii::$app->mycomponent->getHomeCategory($_catalog['option_value'], 20);
+}
 ?>
 
 <section id="mySlider" class="carousel slide" data-ride="carousel" data-interval="10000">
